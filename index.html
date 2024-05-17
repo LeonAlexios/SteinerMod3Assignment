@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Locator</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Restaurant Filter Application</h1>
+    </header>
+    <main>
+        <div class="content">
+            <div class="filter">
+                <form action="submit" id="filter-form">
+                    <label for="gluten">Do you want gluten-free options?</label>
+                    <input type="checkbox" id="gluten">
+                    <label for="vegan">Do you want vegan options?</label>
+                    <input type="checkbox" id="vegan">
+                    <label for="local">Do you want local options</label>
+                    <input type="checkbox" id="local">
+                    <input type="submit" value="Apply Filter" onclick="restaurantLoop()">
+                </form>
+            </div>
+            <div id="output" class="restaurants">
+                <table id="restaurant-table">
+
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
